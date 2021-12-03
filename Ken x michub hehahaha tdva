@@ -76,7 +76,7 @@ TextButton.MouseButton1Click:Connect(function()
 	if game.Players:FindFirstChild(TextBox.Text) then
          while wait(0.01) do
 			local part = game.Players.LocalPlayer.Character.HumanoidRootPart
-			local info = TweenInfo.new(20)
+			local info = TweenInfo.new(20,Enum.EasingStyle,Enum.EasingDirection)
 			local goal = {
 				CFrame = CFrame.game.Players:FindFirstChild(TextBox.Text).Character.HumanoidRootPart.Position
 			}
