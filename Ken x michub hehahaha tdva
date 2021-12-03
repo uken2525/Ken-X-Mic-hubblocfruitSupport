@@ -1,0 +1,175 @@
+-- Objects
+
+local Tweenservice = game:GetService("TweenService")
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_Roundify_12px = Instance.new("ImageLabel")
+local TextBox = Instance.new("TextBox")
+local TextBox_Roundify_12px = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Frame_2 = Instance.new("ImageLabel")
+local Frame_3 = Instance.new("ImageLabel")
+local TextButton = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local Frame_4 = Instance.new("Frame")
+
+-- Properties
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.BackgroundTransparency = 1
+Frame.Position = UDim2.new(0.0261584688, 0, 0.714131594, 0)
+Frame.Size = UDim2.new(0.285500735, 0, 0.229773462, 0)
+Frame.ZIndex = 2
+Frame.Image = "rbxassetid://3570695787"
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.Active = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(1, 0, 0.276995301, 0)
+TextLabel.ZIndex = 3
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "ตามติดชีวิตคนลาว"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+TextLabel_Roundify_12px.Name = "TextLabel_Roundify_12px"
+TextLabel_Roundify_12px.Parent = TextLabel
+TextLabel_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_Roundify_12px.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_Roundify_12px.BackgroundTransparency = 1
+TextLabel_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_Roundify_12px.ZIndex = 2
+TextLabel_Roundify_12px.Image = "rbxassetid://3570695787"
+TextLabel_Roundify_12px.ImageColor3 = Color3.new(0.835294, 0.835294, 0.835294)
+TextLabel_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+TextLabel_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox.BackgroundTransparency = 1
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0759162307, 0, 0.682008386, 0)
+TextBox.Size = UDim2.new(0.853403151, 0, 0.225352108, 0)
+TextBox.ZIndex = 3
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "ชื่อ"
+TextBox.TextColor3 = Color3.new(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14
+TextBox.TextWrapped = true
+TextButton.MouseButton1Click:Connect(function()
+	if game.Players:FindFirstChild(TextBox.Text) then
+         while wait(0.01) do
+	TextButton.MouseButton1Click:Connect(function()
+	if game.Players:FindFirstChild(TextBox.Text) then
+         while wait(0.01) do
+			local part = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local info = TweenInfo.new(20)
+			local goal = {
+				CFrame = CFrame.game.Players:FindFirstChild(TextBox.Text).Character.HumanoidRootPart.Position
+			}
+	        	local tween = Tweenservice:Create(part, info, goal)
+			      tween:Play()
+          end
+	      end
+      end)
+    end
+	end
+end)
+
+TextBox_Roundify_12px.Name = "TextBox_Roundify_12px"
+TextBox_Roundify_12px.Parent = TextBox
+TextBox_Roundify_12px.Active = true
+TextBox_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextBox_Roundify_12px.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox_Roundify_12px.BackgroundTransparency = 1
+TextBox_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextBox_Roundify_12px.Selectable = true
+TextBox_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+TextBox_Roundify_12px.ZIndex = 2
+TextBox_Roundify_12px.Image = "rbxassetid://3570695787"
+TextBox_Roundify_12px.ImageColor3 = Color3.new(0.8, 0.8, 0.8)
+TextBox_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+TextBox_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.Position = UDim2.new(0.183246076, 0, 0.314553976, 0)
+TextLabel_2.Size = UDim2.new(0.599476516, 0, 0.0985915512, 0)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "TH Ver and v1"
+TextLabel_2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14
+TextLabel_2.TextWrapped = true
+
+Frame_2.Name = "Frame"
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_2.BackgroundTransparency = 1
+Frame_2.Position = UDim2.new(-0.00113474263, 0, -0.0488857217, 0)
+Frame_2.Rotation = 1
+Frame_2.Size = UDim2.new(1, 0, 1.05633807, 0)
+Frame_2.Image = "rbxassetid://3570695787"
+Frame_2.ImageColor3 = Color3.new(0, 0, 0)
+Frame_2.ScaleType = Enum.ScaleType.Slice
+Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
+
+Frame_3.Name = "Frame"
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_3.BackgroundTransparency = 1
+Frame_3.Position = UDim2.new(-0.00113474263, 0, 0.115433529, 0)
+Frame_3.Rotation = -2
+Frame_3.Size = UDim2.new(1, 0, 0.892018795, 0)
+Frame_3.Image = "rbxassetid://3570695787"
+Frame_3.ImageColor3 = Color3.new(0, 0.682353, 1)
+Frame_3.ScaleType = Enum.ScaleType.Slice
+Frame_3.SliceCenter = Rect.new(100, 100, 100, 100)
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton.Position = UDim2.new(0.270306557, 0, 0.461643547, 0)
+TextButton.Size = UDim2.new(0.452879608, 0, 0.192488268, 0)
+TextButton.ZIndex = 2
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "ไป"
+TextButton.TextColor3 = Color3.new(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14
+TextButton.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.new(0, 0.756863, 0.92549)
+Close.Position = UDim2.new(0.231039539, 0, -0.336478502, 0)
+Close.Size = UDim2.new(0.476439834, 0, 0.225352108, 0)
+Close.ZIndex = 3
+Close.Font = Enum.Font.SourceSans
+Close.Text = "หยุด"
+Close.TextColor3 = Color3.new(1, 1, 1)
+Close.TextScaled = true
+Close.TextSize = 14
+Close.TextWrapped = true
+Close.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+
+Frame_4.Parent = Frame
+Frame_4.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Frame_4.Position = UDim2.new(0.214659706, 0, -0.366197169, 0)
+Frame_4.Size = UDim2.new(0.507853448, 0, 0.28638497, 0)
+Frame_4.ZIndex = 2
